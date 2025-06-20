@@ -125,7 +125,12 @@ img {
 }
 
 /* button idfk */
+a {
+  text-decoration: none; /* removes underline */
+}
+
 button {
+  color: var(--txt-color);
   background-color: var(--btn-color);
   border: none;
   border-radius: 8px;
