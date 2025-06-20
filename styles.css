@@ -1,0 +1,179 @@
+/* styles.css  */
+/* some root shit idk */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+:root {
+    --txt-color: #ffffff;
+    --bg-color: #212121;
+    --ac-color: #000080;
+    --btn-color: #000080;
+    --btn-hover: #0000cd;
+    --font-sans: DM Sans, Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sixing: borderbox;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-color);
+    color: var(--txt-color);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* header */
+header {
+    background: linear-gradient(270deg, #2a9d8f, #264653, #1e4e4f);
+    background-size: 600% 600%;
+    animation: gradientShift 10s ease infinite;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 0 0 8px #00ffcc, 0 0 16px #00ffcc;
+     font-family: 'Orbitron', sans-serif;
+}
+
+
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* misc */
+
+hr {
+    margin: 30px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+/* section */
+
+section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section h2 {
+    text-transform: lowercase;
+    font-size: 2.5rem;
+    color: var(--txt-color);
+    margin-bottom: 20px;
+}
+
+section h3 {
+    text-transform: lowercase;
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: var(--txt-color);
+}
+
+section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--txt-color);
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    background: #2f2f2f;
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+}
+
+section div {
+    background: #2a2a2a;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
+    margin-bottom: 30px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+section div:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+img {
+    max-width: 100%;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+/* button idfk */
+button {
+    background-color: var(--btn-color);
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 8px 0 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: var(--btn-hover);
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: lowercase;
+}
+
+/* footer */
+footer {
+    background-color: var(--bg-color);
+    color: var(--txt-color);
+    text-align: center;
+    padding: 25px 20px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9rem;
+    border-radius: 0 0 12px 12px;
+    margin-top: 40px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+footer p {
+    margin: 8px 0;
+    line-height: 1.4;
+}
+
+footer a {
+    color: #2a9d8f;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+    text-transform: lowercase;
+}
+
+footer a:hover {
+    color: #1e736d;
+    text-decoration: underline;
+}
