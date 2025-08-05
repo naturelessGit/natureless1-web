@@ -309,6 +309,9 @@ footer {
   body {
     padding: 0 0.75rem;
   }
+  header {
+    padding-top: 200px;
+  }
 }
 @media (max-width: 768px) {
   nav ul {
