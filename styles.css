@@ -66,6 +66,7 @@ header {
   color: var(--text-color);
   padding: 20px 0;
   text-align: center;
+  padding-top: 80px;
 }
 
 section {
@@ -308,9 +309,6 @@ footer {
 
   body {
     padding: 0 0.75rem;
-  }
-  header {
-    padding-top: 80px;
   }
 }
 @media (max-width: 768px) {
