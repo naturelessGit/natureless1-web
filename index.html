@@ -1,77 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="assets/favicon.jpeg">
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="assets/favicon.jpeg" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
   <title>Natureless1</title>
 </head>
 <body>
-	<header>
-		<h1>Hello, im Natureless1</h1>
-		<h2>Web, software, and iOS tools dev.</h2>
-	</header>
-	<hr>
-	<section>
-		<h2>work</h2>
-		<div>
-			<img src="assets/idk.png" style="width: 500px;">
-			<h3>ibootme</h2>
-			<p>.ipsw manager</p>
-			<a href="https://github.com/naturelessGit/iBootMe" target="_blank">
-				<button>view project on github</button>
-			</a>
-		</div>
-		<div>
-			<img src="assets/websites.png" style="width: 500px;">
-			<h3>websites</h2>
-			<p>Web directory</p>
-			<a href="https://naturelessgit.github.io/Websites/" target="_blank">
-				<button>view project</button>
-			</a>
-		</div>
-		<a href="https://github.com/naturelessGit/" target="_blank">
-			<button>view more projects on github</button>
-		</a>
-	</section>
-	<section>
-		<h2>about me</h2>
-		<p>Im a front-end, software, and iOS hacking/syncing tools developer. Im not a mobile developer, however i make computer tools for iPhones and iPads for tweaking, backups, and more.<br>
-		I develop apps for fun, and i hope you do find some of my apps quite useful :)</p>
-		<a href="https://linktr.ee/natureless1">
-			<button>linktree</button>
-		</a>
-		<a href="https://tiktok.com/@natureless1">
-			<button>tiktok</button>
-		</a>
-		<br><br>
-		<p>VLC media player is my favorite kind of software.</p>
-		<a href="https://www.videolan.org/vlc" title="Get VLC media player - It plays, it streams, it kills WiMPs!!">
-		    <img src="https://www.videolan.org/images/goodies/buttons_getVLC/GetVLC_110.png" width="110" height="45" alt="Get VLC media player" />
-		</a>
-		<br><br>
-		<p>Email: ogeomappers@gmail.com - This email rarely answers and is not intended for questions, casual contact, or support.</p>
-		<br>
-		<br>
-		<div>
-			<h3>tech</h3>
-			<ul>
-				<li>C</li>
-				<li>Python</li>
-				<li>JavaScript</li>
-				<li>Shell</li>
-				<li>HTML/CSS</li>
-			</ul>
-		</div>
-	</section>
-	<footer>
-		<p>&copy; Natureless1 all rights reserved</p><br>
-		<p>This project is open source, you can view this project at <a href="https://github.com/naturelessGit/natureless1-web">GitHub</a></p>
-	</footer>
-  
+  <nav aria-label="Primary navigation">
+  <div class="hamburger" tabindex="0" aria-label="Toggle navigation menu" role="button" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <ul>
+    <li><a href="#start">intro</a></li>
+    <li><a href="#projects">projects</a></li>
+    <li><a href="#about">about</a></li>
+    <li><a href="#tech">tech</a></li>
+  </ul>
+</nav>
+  <header id="start">
+    <h3>hello, i’m</h3>
+    <h1 class="highlight-in-header">natureless1</h1>
+    <h2>
+      i'm interested in the apple ecosystem,<br />
+      computers, servers,<br />
+      or really anything tech related.
+    </h2>
+  </header>
+<section id="projects">
+  <h2>projects</h2>
+  <div class="projects-container">
+    <article class="project-box ibootme">
+      <img src="assets/idk.png" alt="ibootme screenshot" />
+      <h3>ibootme</h3>
+      <p>ibootme is an .ipsw manager based on idevicerestore.</p>
+      <a href="https://github.com/naturelessGit/iBootMe" target="_blank" rel="noopener noreferrer">github</a>
+    </article>
+    <article class="project-box websites">
+      <img src="assets/websites.png" alt="websites screenshot" />
+      <h3>websites</h3>
+      <p>websites is a web directory</p>
+      <a href="https://naturelessgit.github.io/Websites/" target="_blank" rel="noopener noreferrer">view project</a>
+    </article>
+  </div>
+  <a href="https://github.com/naturelessGit/" target="_blank" rel="noopener noreferrer" class="button-like">view more on github</a>
+</section>
+
+  <section id="about">
+    <h2>about me</h2>
+    <p>
+      I'm passionate about the Apple ecosystem, front-end development, computers, and<br />
+      all things tech. Online, you might know me as “natureless.”<br />
+      One of my favorite pieces of software is VLC Media Player—simple, powerful, and<br />
+      reliable. Feel free to get in touch using the options below:
+    </p>
+    <div class="social-icons">
+      <a href="https://linktr.ee/natureless1" target="_blank" rel="noopener noreferrer">
+        <img src="assets/linktree.png" width="50" alt="Linktree profile icon" />
+      </a>
+      <a href="https://tiktok.com/@natureless1" target="_blank" rel="noopener noreferrer">
+        <img src="assets/tiktok.png" width="50" alt="TikTok profile icon" />
+      </a>
+      <a href="https://discord.gg/SYvyXMGYhr" target="_blank" rel="noopener noreferrer">
+        <img src="assets/discord.png" width="50" alt="Discord invite icon" />
+      </a>
+      <a href="mailto:ogeomappers@gmail.com" target="_blank" rel="noopener noreferrer">
+        <img src="assets/email.png" width="50" alt="Email icon" />
+      </a>
+    </div>
+    <p class="email-note">Please note: The email rarely answers and is not intended for questions, casual contact, or support.</p>
+  </section>
+  <section id="tech">
+    <h2>tech</h2>
+    <ul>
+      <li>C</li>
+      <li>Python</li>
+      <li>JavaScript</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Shell</li>
+    </ul>
+  </section>
+  <footer>
+    <p>© natureless1, 2025.<br />All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
